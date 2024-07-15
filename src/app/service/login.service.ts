@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class LoginService {
-  private apiUrl = 'http://localhost:8002'; // Removed '/login' from base URL
+  private apiUrl = 'http://5.181.217.67:8002'; // Removed '/login' from base URL
 
   constructor(private http: HttpClient) {}
 

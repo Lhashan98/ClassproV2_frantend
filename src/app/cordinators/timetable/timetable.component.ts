@@ -32,7 +32,7 @@ throw new Error('Method not implemented.');
   }
 
   getAllReporDetails() {
-    this.http.get<any>('http://localhost:8002/addreport/getAll')
+    this.http.get<any>('http://5.181.217.67:8002/addreport/getAll')
       .subscribe(
         (resultData: any) => {
           this.ReportArray = resultData.data;

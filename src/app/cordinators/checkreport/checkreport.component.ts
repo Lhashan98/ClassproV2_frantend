@@ -27,7 +27,7 @@ interface Report {
   styleUrls: ['./checkreport.component.css']
 })
 export class CheckreportComponent implements OnInit {
-  private apiUrl = 'http://localhost:8002/addreport/getAll';
+  private apiUrl = 'http://5.181.217.67:8002/addreport/getAll';
   public reports: Report[] = [];
   public filteredReports: Report[] = [];
   public searchTerm: string = '';
@@ -87,7 +87,7 @@ export class CheckreportComponent implements OnInit {
   }
 
   deletereport(data: Report): void {
-    this.http.delete(`http://localhost:8002/addreport/delete/${data._id}`).subscribe((resultData: any) => {
+    this.http.delete(`http://5.181.217.67:8002/addreport/delete/${data._id}`).subscribe((resultData: any) => {
       console.log(resultData);
       alert("Course Deleted");
       // this.getreport();

@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class SettingService {
-  private baseUrl = 'http://localhost:8002'; // Your Node.js server URL
+  private baseUrl = 'http://5.181.217.67:8002'; // Your Node.js server URL
  
 
   constructor(private http: HttpClient) {}
