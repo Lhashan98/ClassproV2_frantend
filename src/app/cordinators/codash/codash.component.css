@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700");
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+  background: #ffffff;
+}
+.container{
+  display: flex;
+}
+nav{
+  position: relative;
+  top: 0px;
+  bottom: -20px;
+  height: auto;
+  left: -10px;
+  background: #fff;
+  width: 280px;
+  overflow: hidden;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+.logo{
+  text-align: center;
+  display: flex;
+  margin: 10px 0 0 10px;
+}
+.logo img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.error-message {
+  color: #d9534f; /* Bootstrap's danger color (red) */
+  background-color: #f2dede; /* Light red background */
+  border: 1px solid #ebccd1; /* Light red border */
+  padding: 10px; /* Space inside the box */
+  border-radius: 4px; /* Rounded corners */
+  margin-top: 10px; /* Space above the error message */
+  text-align: center; /* Center the text */
+  font-size: 14px; /* Adjust the font size */
+}
+.logo span{
+  font-weight: bold;
+  padding-left: 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+a{
+  position: relative;
+  color: rgb(85, 83, 83);
+  font-size: 14px;
+  display: table;
+  width: 280px;
+  padding: 10px;
+}
+nav .fas{
+  position: relative;
+  width: 70px;
+  height: 40px;
+  top: 14px;
+  font-size: 20px;
+  text-align: center;
+}
+.nav-item{
+  position: relative;
+  top: 12px;
+  margin-left: 10px;
+}
+a:hover{
+  background: #eee;
+}
+.logout{
+  position: absolute;
+  bottom: 50px;
+}
+
+
+/* Main Section */
+.main{
+  position: relative;
+  padding: 20px;
+  width: 100%;
+  margin-top: -100px;
+}
+.main-top{
+  display: flex;
+  width: 100%;
+}
+.main-top i{
+  position: absolute;
+  right: 0;
+  margin: 10px 30px;
+  color: rgb(110, 109, 109);
+  cursor: pointer;
+}
+.main-skills{
+  display: flex;
+  margin-top: 20px;
+}
+.main-skills .card{
+  width: 25%;
+  margin: 10px;
+  background: #fff;
+  text-align: center;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+.main-skills .card h3{
+  margin: 10px;
+  text-transform: capitalize;
+}
+.main-skills .card p{
+  font-size: 12px;
+}
+.main-skills .card button{
+  background: orangered;
+  color: #fff;
+  padding: 7px 15px;
+  border-radius: 10px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.main-skills .card button:hover{
+  background: rgba(223, 70, 15, 0.856);
+}
+.main-skills .card i{
+  font-size: 22px;
+  padding: 10px;
+}
+
+/* Courses */
+.main-course{
+  margin-top:20px ;
+  text-transform: capitalize;
+}
+.course-box{
+  width: 100%;
+  height: 300px;
+  padding: 10px 10px 30px 10px;
+  margin-top: 10px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+.course-box ul{
+  list-style: none;
+  display: flex;
+}
+.course-box ul li{
+  margin: 10px;
+  color: gray;
+  cursor: pointer;
+}
+.course-box ul .active{
+  color: #000;
+  border-bottom: 1px solid #000;
+}
+.course-box .course{
+  display: flex;
+}
+.box{
+  width: 33%;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  background: rgb(235, 233, 233);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+.box p{
+  font-size: 12px;
+  margin-top: 5px;
+}
+.box button{
+  background: #000;
+  color: #fff;
+  padding: 7px 10px;
+  border-radius: 10px;
+  margin-top: 3rem;
+  cursor: pointer;
+}
+.box button:hover{
+  background: rgba(0, 0, 0, 0.842);
+}
+.box i{
+  font-size: 7rem;
+  float: right;
+  margin: -20px 20px 20px 0;
+}
+.html{
+  color: rgb(25, 94, 54);
+}
+.css{
+  color: rgb(104, 179, 35);
+}
+.js{
+  color: rgb(28, 98, 179);
+}
+
+
+/* body */
+
+/*  */
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 1000px;
+  margin: 0 auto; /* Center the form horizontally */
+  margin-top: 50px; /* Add some top margin for spacing */
+  margin-top: 118px;
+}
+
+/* Add styles for form elements (input fields, buttons, etc.) here */
+
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #3460db;
+  margin-bottom: 35px;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100px;
+}
+
+/* button:hover {
+  background-color: #45a049;
+} */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+/* a:hover {
+  text-decoration: underline;
+  color: #b6b4d4;
+} */
+
+.department {
+  color: #000000; /* Set text color to black */
+  font-weight: bold; /* Set font weight to bold */
+  margin-top: 20px; /* Adjust spacing as needed */
+}
+/* CSS for the label */
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block; /* Ensures label occupies full width */
+  text-align: left;
+}
+
+/* CSS for the select element */
+select {
+  width: 100%; /* Make the select element fill its container */
+  padding: 8px; /* Add some padding for better appearance */
+  font-size: 16px; /* Adjust font size as needed */
+  border-radius: 5px; /* Rounded corners for better appearance */
+  border: 1px solid #ccc; /* Add a border */
+}
+
+/* Style for the options */
+option {
+  font-size: 14px; /* Adjust font size as needed */
+}
+
+/* Style for the disabled "Select a class" option */
+option[disabled] {
+  color: #999; /* Change color to gray */
+}
+
+/* Style the select (dropdown) */
+select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+/* Style for the required indicator (optional) */
+select:required {
+  border-color: red; /* Change the border color for required fields */
+}
+
+/* Optional: Style for hover and focus states */
+select:hover, select:focus {
+  border-color: #333;
+}
+
+/* For screens smaller than 768px */
+@media screen and (max-width: 768px) {
+
+  .nav{
+    width: 250px;
+
+  }
+
+
+}

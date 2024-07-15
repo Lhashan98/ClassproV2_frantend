@@ -1,0 +1,98 @@
+<span style="font-family: verdana, geneva, sans-serif;"><!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <title>Dashboard | By Code Info</title>
+      
+      <!-- Font Awesome Cdn Link -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    </head>
+
+      <div class="container">
+        <nav>
+          <ul>
+            <li><a routerLink="/codash" href="#"  class="logo">
+              <img src="assets/image/images.png" alt="">
+              <span class="nav-item">DashBoard</span>
+            </a></li>
+            <li><a routerLink="/addnewcourses" href="#" >
+              <i class="fas fa-home"></i>
+              <span class="nav-item" >Add New Course</span>
+            </a></li>
+            <li><a href="" routerLink="/courses">
+                <i class="fas fa-chart-bar"></i>
+                <span class="nav-item">Courses</span>
+              </a></li>
+            <li><a routerLink="/Checkreport" href="" >
+              <i class="fas fa-user"></i>
+              <span class="nav-item">Check Reports</span>
+            </a></li>
+            <!-- <li><a href="" routerLink="/additionalrequest">
+              <i class="fas fa-file"></i>
+              <span class="nav-item">Additional Request</span>
+            </a></li> -->
+            
+            <!-- <li><a href="" routerLink="/availableclasses">
+              <i class="fas fa-tasks"></i>
+              <span class="nav-item">Available classes</span>
+            </a></li>
+            <li><a href="" routerLink="/reports">
+              <i class="fas fa-wallet"></i>
+              <span class="nav-item">Reports</span>
+            </a></li> -->
+            <li><a href="" routerLink="/checktimetable">
+              <i class="fas fa-clock"></i>
+              <span class="nav-item">Time Table</span>
+            </a></li>
+            <li><a routerLink="/setting" href="">
+              <i class="fas fa-cog"></i>
+              <span class="nav-item">Settings</span>
+            </a></li>
+            <li><a  class="logout">
+              <i class="fas fa-sign-out-alt"></i>
+              <button class="nav-item" (click)="logout()">Logout</button>
+              
+            </a></li>
+          </ul>
+        </nav>
+      </div>
+
+
+<div class="container2">
+    <h3>{{ department }}</h3>
+
+      <div class="search-bar">
+        <input type="text" class="search-input" [(ngModel)]="searchTerm" placeholder="Search">
+        <button class="search-button">Search</button>
+      
+      </div>
+
+  <div class="table">
+    <table>
+      <thead>
+        <tr>
+          <th>Course Name</th>
+          <th>Course Code</th>
+          <!-- <th>Course Description</th> -->
+          <th>Options</th> <!-- New column for Options -->
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let course of filteredCourses">
+          <td>{{ course.course_name | uppercase }}</td>
+          <td>{{ course.CourseCode }}</td>
+          <!-- <td>{{ course.discription }}</td> -->
+          <td>
+            <!-- Add options here -->
+            <!-- <button type="button" class="edit" (click)="editCourse(course.id)">Edit</button> -->
+            <!-- Assuming the name of the method in your TypeScript class is setDelete -->
+            <button type="button" class="delete" (click)="deleteCourse(course)">Delete</button>
+
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+

@@ -1,0 +1,22 @@
+<!-- login.component.html -->
+<a routerLink="/" class="back-button">Back</a>
+
+<h1 align="center">Welcome to ClassPro</h1>
+
+<div class="login-container">
+  <form class="login-form" (ngSubmit)="login()" #loginForm="ngForm">
+    <div class="form-group">
+      <label for="username">Username:</label>
+      <input type="text" [(ngModel)]="username" name="username" required>
+    </div>
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" [(ngModel)]="password" name="password" required>
+    </div>
+    <div class="form-group">
+      <button type="submit" class="login_btn">LOGIN</button>
+    </div>
+    <div *ngIf="getErrorMessage() | async as errorMessage" class="error-message">{{ errorMessage }}</div>
+    <div *ngIf="getSuccessMessage() | async as successMessage" class="success-message">{{ successMessage }}</div>
+  </form>
+</div>

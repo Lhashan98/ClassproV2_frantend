@@ -1,0 +1,72 @@
+/* Apply basic styles to your container */
+.container {
+  margin-left: 950px;
+}
+
+/* Style the heading inside the container */
+h1 {
+  color: #333;
+  margin-top: -85%;
+  margin-right: 10px;
+  font-size: 56px;
+}
+
+/* Style the login button inside the container */
+.login-btn {
+  background-color: rgb(20, 48, 128);
+  width: 25%;
+  color: #fff;
+  padding: 5px 5px;
+  opacity: 99%;
+  border: none;
+  margin-bottom: 22.5%;
+  margin-top: 300px;
+  padding: 5%;
+  cursor: pointer;
+  margin-left: 120px;
+  font-size: 19px;
+  border-radius: 10px;
+}
+
+/* Apply styles to the outer image container */
+.container_outer_img {
+  max-width: 100%;
+  overflow: hidden;
+  opacity: 0.9;
+  margin-top: -10px;
+}
+
+/* Responsive image styling */
+.container_outer_img img {
+  width: 113%;
+  display: block;
+  margin-top: 10px;
+}
+
+.img-inner {
+  float: left; /* Float the inner container to the right */
+  margin-left: 20px; /* Add some space between the image and other content */
+  height: 150%;
+  margin-left: 0px;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 600px) {
+  .container {
+    margin-left: 0; /* Adjust margin for smaller screens */
+    padding: 10px;
+  }
+
+  .container .login-btn {
+    width: 100%; /* Make the login button take full width */
+    margin-left: 0; /* Remove specific margin for smaller screens */
+    margin-bottom: 10px; /* Adjust margin for smaller screens */
+    font-size: 16px; /* Decrease font size for smaller screens */
+  }
+
+  h1 {
+    font-size: 36px; /* Decrease font size for smaller screens */
+    margin-top: -50px; /* Adjust margin for smaller screens */
+    margin-right: 0; /* Remove specific margin for smaller screens */
+  }
+}
