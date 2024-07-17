@@ -1,29 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
 
-
-
-
 h1 {
   font-size:42px;
-font-family: Comic Sans MS, Comic Sans, cursive;
+  font-family: Comic Sans MS, Comic Sans, cursive;
   padding: 30px;
-  margin-top: auto;
+  margin-top: 0px;
   
-  
+}
 
+/* Apply styles to the outer image container */
+.container_outer_img {
+  overflow: hidden;
+  opacity: 0.3;
+  filter: brightness(0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: full;
+}
+
+/* Responsive image styling */
+.container_outer_img img{
+  width: 100%;
+  height: 100%;
+  object-fit: full;
 }
 
 /* Login css */
-
-
 
 .login-container {
   background-color: #fff;
   padding: 3px;
   border-radius: 9px;
   box-shadow: 0 0 10px rgba(82, 75, 75, 0.1);
-  width: 300px;
+  width: 350px;
   margin: auto;
+  height: 300px;
 }
 
 
@@ -33,8 +48,11 @@ font-family: Comic Sans MS, Comic Sans, cursive;
 }
 
 .form-group {
-  margin-bottom: 50px;
-
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: medium;
 }
 
 .form-group label {
@@ -67,6 +85,7 @@ font-family: Comic Sans MS, Comic Sans, cursive;
   margin: 0 auto;
   display: block;
 }
+
 .back-button {
     position: absolute;
     top: 20px; /* Adjust the top position as needed */
@@ -81,4 +100,36 @@ font-family: Comic Sans MS, Comic Sans, cursive;
 /* Add hover effect to the button */
 .back-button:hover {
     background-color: #0056b3;
+}
+
+/* For screens up to 768px (typical mobile devices) */
+@media screen and (max-width: 768px) {
+
+  .login-container{
+    margin-top: 0px;
+    margin-bottom: -550px;
+    overflow: hidden;
+  }
+
+  .container_outer_img {
+    overflow: hidden;
+    opacity: 0.3;
+    filter: brightness(0.8);
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: full;
+  }
+
+  .container_outer_img img{
+    margin-bottom: -500px;
+    margin-top: 0px;
+    object-fit: full;
+    width: 100%;
+    height: 100%;
+  }
 }

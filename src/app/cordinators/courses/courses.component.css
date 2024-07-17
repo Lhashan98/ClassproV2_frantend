@@ -1,90 +1,221 @@
-/* Apply basic styles to your container */
-.container {
-  margin-top: 10px;
-  margin-left: auto;
-  margin-right: auto; /* Center the container */
-  max-width: 1200px; /* Limit container width */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700");
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
+.container{
+  display: flex;
+}
+nav{
+  position: relative;
+  top: 40px;
+  bottom: 0;
+  height: 600px;
+  left: -10px;
+  background: #fff;
+  width: 250px;
+  overflow: hidden;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+  margin-top: -39px;
+}
+.logo{
+  text-align: center;
+  display: flex;
+  margin: 10px 0 0 10px;
+}
+.logo img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.logo span{
+  font-weight: bold;
+  padding-left: 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+a{
+  position: relative;
+  color: rgb(85, 83, 83);
+  font-size: 14px;
+  display: table;
+  width: 280px;
+  padding: 10px;
+}
+nav .fas{
+  position: relative;
+  width: 70px;
+  height: 40px;
+  top: 14px;
+  font-size: 20px;
+  text-align: center;
+}
+.nav-item{
+  position: relative;
+  top: 12px;
+  margin-left: 10px;
+}
+a:hover{
+  background: #eee;
+}
+.logout{
+  position: absolute;
+  bottom: 50px;
+}
+
+
+
+
 /* Style the heading inside the container */
-h1 {
+h2 {
   color: #333;
-  font-size: 56px;
+  font-size: 35px;
   text-align: center; /* Center the heading */
   margin-bottom: 5px; 
   margin-top: -20px;
 }
 
+.search-bar {
+  height: 50px;
+  width: 700px;
+  margin: 20px auto; /* Center the search bar horizontally */
+  margin-top: 40px;
+}
+
+.search-input {
+  height: 100%;
+  width: 80%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 10px;
+
+}
+
+.search-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  height: 100%;
+  width: 18%;
+  padding: 10px 15px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
 /* Style the login button inside the container */
-.login-btn {
+/* .login-btn {
   background-color: rgb(20, 48, 128);
   color: #fff;
-  padding: 15px 30px; /* Adjust padding */
+  padding: 15px 30px; 
   cursor: pointer;
   font-size: 19px;
   border: none;
   border-radius: 10px;
-  display: block; /* Make the button a block element */
-  margin: 20px auto; /* Center the button horizontally and reduce vertical margin */
+  display: block; 
+  margin: 20px auto; 
+} */
+
+
+.container2 {
+  width: 1000px;
+  margin-top: -500px;
+  margin-bottom: -300px;
+  margin-left: 300px;
+  text-align: center;
+  align-items: center;
 }
 
-/* Apply styles to the outer image container */
-.container_outer_img {
-  max-width: 100%;
-  overflow: hidden;
-  text-align: center; /* Center the image */
-  margin-bottom: 5px;
+table {
+  width: 1000px;
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-left: 50px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400, 500, 600, 700;
+
 }
 
-/* Responsive image styling */
-.container_outer_img img {
-  max-width: 100%; /* Set maximum width for responsiveness */
-  height: auto; /* Maintain aspect ratio */
-  display: inline-block; /* Ensure inline display */
-  margin-top: 5px;
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
 }
 
-.img-inner {
-  float: none; /* Remove float */
-  margin: 0 auto 30px; /* Center the image container and add margin-bottom */
-  width: 80%; /* Adjust width */
+th {
+  background-color:#3d7bec;
+  color: #fff;
 }
 
-.body{
-  overflow: auto;
-  margin-bottom: -600px;
+tr:nth-child(even) {
+  background-color: #f9f9f9;
 }
 
-/* Media queries for responsive design */
-/* For screens up to 600px (mobile) */
-@media only screen and (max-width: 600px) {
-  h1 {
-    font-size: 2.5rem; /* Decrease font size for smaller screens */
+tr:hover {
+  background-color: #b8c9f0;
+}
+
+td button {
+  background-color:#dc3545; 
+  color: #fff; 
+  padding: 8px 16px; 
+  border: none;
+  border-radius: 4px; 
+  cursor: pointer; 
+}
+
+
+@media screen and (max-width: 768px) {
+  /* Adjust styles for smaller screens here */
+
+  nav {
+    width: 250px;
+   }
+
+  .container2 {
+    width: 700px;
+    margin-top: -500px;
+    margin-bottom: -300px;
+    margin-left: 240px;
+    text-align: center;
+    align-items: center;
   }
 
-  .login-btn {
-    width: 100%; /* Make the login button take full width */
-  }
-}
-
-/* For screens between 601px and 1024px (tablets) */
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-  h1 {
-    font-size: 3rem; /* Adjust font size for tablets */
+  h2 {
+    font-size: 25px;
+    text-align: center; 
+    margin-bottom: 5px; 
+    margin-top: -20px;
   }
 
-  .login-btn {
-    width: 50%; /* Adjust button width for tablets */
-  }
-}
-
-/* For screens larger than 1024px (desktops) */
-@media only screen and (min-width: 1025px) {
-  h1 {
-    font-size: 4rem; /* Adjust font size for desktop screens */
+  .search-bar{
+    width: 400px;
+    margin-left: 150px;
   }
 
-  .login-btn {
-    width: 25%; /* Adjust button width for desktop screens */
+  table{
+    width: 600px;
   }
 }
