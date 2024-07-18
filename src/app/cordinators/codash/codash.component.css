@@ -86,8 +86,6 @@ button:hover {
 }
 
 
-
-
 /* Main Section */
 .main{
   position: relative;
@@ -102,8 +100,17 @@ button:hover {
   color: rgb(43, 43, 43);
   margin-left: 360px;
   
-
 }
+
+h3 {
+  color: #333;
+  font-size: 35px;
+  text-align: center; 
+  margin-bottom: 35px; 
+  margin-top: 10px; 
+  margin-left: 50px;
+}
+
 
 
 form {
@@ -120,9 +127,10 @@ form {
   margin-top: -450px;
 }
 
-
-/* Add styles for form elements (input fields, buttons, etc.) here */
-
+button.submit {
+  width: 500px; 
+  margin-top: 40px;
+}
 
 label {
   display: block;
@@ -139,19 +147,11 @@ input {
 }
 
 
-
-
 ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-
-
-/* a:hover {
-  text-decoration: underline;
-  color: #b6b4d4;
-} */
 
 .department {
   color: #000000; /* Set text color to black */

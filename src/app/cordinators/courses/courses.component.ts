@@ -27,7 +27,7 @@ interface Report {
   styleUrls: ['./courses.component.css']
 })
 export class CoursesComponent implements OnInit {
-  private apiUrl = 'http://5.181.217.67:8002/addcourse/getAll';
+  private apiUrl = '5.181.217.67:8002/addcourse/getAll';
   public courses: any[] = [];
   searchTerm: string = '';
   public CourseCode: string = '';
@@ -70,7 +70,7 @@ export class CoursesComponent implements OnInit {
   }
    // Add the deleteCourse method
    deleteCourse(data: any): void {
-    this.http.delete("http://5.181.217.67:8002/addcourse/delete/" + data._id).subscribe((resultData: any) => {
+    this.http.delete("5.181.217.67:8002/addcourse/delete/" + data._id).subscribe((resultData: any) => {
       console.log(resultData);
       alert("Course Deleted");
       this.getCourses();
@@ -99,7 +99,7 @@ export class CoursesComponent implements OnInit {
   //     "CourseCode": this.CourseCode,
   //     "description": this.description,
   //   };
-  //   this.http.post("http://5.181.217.67:8002/addcourse/create", bodyData).subscribe((resultData: any) => {
+  //   this.http.post("5.181.217.67:8002/addcourse/create", bodyData).subscribe((resultData: any) => {
   //     console.log(resultData);
   //     alert("Course Registered Successfully");
   //     this.getCourses();

@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class CodashService {
-  private apiUrl = 'http://5.181.217.67:8002';
+  private apiUrl = '5.181.217.67:8002';
 
   constructor(private http: HttpClient) { }
 

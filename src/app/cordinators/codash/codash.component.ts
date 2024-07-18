@@ -62,7 +62,7 @@ export class CodashComponent implements OnInit {
 
   getAllclass() {
     this.http
-      .get("http://5.181.217.67:8002/addclass/getAll")
+      .get("5.181.217.67:8002/addclass/getAll")
       .subscribe((resultData: any) => {
         console.log(resultData);
         this.classArray = resultData.data;
@@ -72,7 +72,7 @@ export class CodashComponent implements OnInit {
   getAllCourse() {
     this.http
       .get(
-        `http://5.181.217.67:8002/addcourse/getAll?department=${this.department}`
+        `5.181.217.67:8002/addcourse/getAll?department=${this.department}`
       )
       .subscribe((resultData: any) => {
         console.log(resultData);
@@ -264,5 +264,13 @@ export class CodashComponent implements OnInit {
         });
     }
     this.filteredClassroomsForAvailable = filteredClassroomsByTime;
+  }
+  
+  minDate(): string {
+    const today = new Date();
+    const year = today.getFullYear();
+    const month = (today.getMonth() + 1).toString().padStart(2, '0');
+    const day = today.getDate().toString().padStart(2, '0');
+    return `${year}-${month}-${day}`;
   }
 }
