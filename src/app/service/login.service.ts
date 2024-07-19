@@ -7,12 +7,12 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class LoginService {
-  private apiUrl = '5.181.217.67:8002'; // Removed '/login' from base URL
+  private apiUrl = 'http://5.181.217.67:8002'; // Removed '/login' from base URL
 
   constructor(private http: HttpClient) {}
 
   login(credentials: { username: string; password: string }): Observable<any> {
-    return this.http.post(`${this.apiUrl}/login`, credentials);
+    return this.http.post(`http://5.181.217.67:8002/login`, credentials);
   }
 
   saveLogin(loginData: { username: string; password: string; usertype: string }): Observable<any> {

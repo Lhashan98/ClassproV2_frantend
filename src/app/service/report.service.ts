@@ -9,7 +9,7 @@ export class ReportService {
   getAvailableClasses() {
     throw new Error('Method not implemented.');
   }
-  private apiUrl = '5.181.217.67:8002/addreport'; // Adjust the URL to your backend endpoint
+  private apiUrl = 'http://5.181.217.67:8002/addreport'; // Adjust the URL to your backend endpoint
 
   constructor(private http: HttpClient) { }
 

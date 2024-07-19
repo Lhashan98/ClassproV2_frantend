@@ -6,7 +6,7 @@ import { Observable } from "rxjs";
   providedIn: "root",
 })
 export class AddreportService {
-  private apiUrl = "5.181.217.67:8002"; // Adjust the URL to your backend endpoint
+  private apiUrl = "http://5.181.217.67:8002"; // Adjust the URL to your backend endpoint
 
   constructor(private http: HttpClient) {}
 

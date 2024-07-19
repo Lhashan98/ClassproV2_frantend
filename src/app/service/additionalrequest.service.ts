@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class AdditionalRequestService {
-  private baseUrl = '5.181.217.67:8002'; // Update with your backend API base URL
+  private baseUrl = 'http://5.181.217.67:8002'; // Update with your backend API base URL
 
   constructor(private http: HttpClient) {}
 
