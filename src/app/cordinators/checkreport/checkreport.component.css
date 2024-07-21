@@ -132,6 +132,17 @@ td button {
   border-radius: 4px; 
   cursor: pointer; 
 }
+h2{
+  margin-right: 950px;
+  text-align: right;
+  font-size: 42px;
+  font-family:serif;
+  margin-top: 0px;
+  
+
+
+}
+
 
 /* Styling for the delete button */
 .delete {

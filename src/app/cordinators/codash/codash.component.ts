@@ -72,7 +72,7 @@ export class CodashComponent implements OnInit {
   getAllCourse() {
     this.http
       .get(
-        `http://5.181.217.67:80028002/addcourse/getAll?department=${this.department}`
+        `http://5.181.217.67:8002/addcourse/getAll?department=${this.department}`
       )
       .subscribe((resultData: any) => {
         console.log(resultData);
