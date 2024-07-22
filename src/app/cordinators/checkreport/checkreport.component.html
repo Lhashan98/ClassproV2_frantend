@@ -115,7 +115,7 @@
                 <td>
                   <button type="button" class="delete" (click)="deletereport(report)">Delete</button>
                 </td>
-                <td [ngStyle]="{'background-color': report.State === 'accepted' ? '#90EE90' : 'inherit'}">
+                <td [ngStyle]="{'background-color': report.State === 'accepted' ? '#f9f9f9' : 'inherit'}">
                   <span *ngIf="report.State !== 'accepted'" class="update-state">Pending</span>
                   <span *ngIf="report.State === 'accepted'" class="checkmark">&#10004;</span>
                 </td>
